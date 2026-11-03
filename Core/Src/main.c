@@ -75,7 +75,7 @@ can_ring_buffer_t queue;
 
 static uint8_t rx_buf[ISOTP_MAX_LEN];
 static isotp_link_t diag;
-static const uds_app_config_t s_app_cfg ;
+static const uds_app_config_t s_app_cfg  = {NULL};
 
 
 
@@ -148,7 +148,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+	/* main loop: drain, then poll */
 	can_frame_t f;
 	while (can_ring_buffer_pop(&queue, &f))
 	{
@@ -157,7 +157,6 @@ int main(void)
 			isotp_on_frame(&diag, f.data, f.dlc, uds_platform_time_us());
 		}
 	}
-
 	isotp_poll(&diag, uds_platform_time_us());
     /* Read the RX status before isotp_rx_take(), which clears it. */
     const isotp_status_t rs = isotp_rx_status(&diag);
