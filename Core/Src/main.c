@@ -75,9 +75,7 @@ can_ring_buffer_t queue;
 
 static uint8_t rx_buf[ISOTP_MAX_LEN];
 static isotp_link_t diag;
-static const uds_app_config_t s_app_cfg  = {NULL};
-
-
+static const uds_app_config_t s_app_cfg = {NULL};
 
 /* ── function definition ────────────────── */
 
