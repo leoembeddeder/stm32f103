@@ -1,7 +1,7 @@
 Dependencies for Project 'STM32F103', Target 'STM32F103': (DO NOT MODIFY !)
 CompilerVersion: 6240000::V6.24::ARMCLANG
 F (startup_stm32f103xe.s)(0x6AE6FE0C)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 543" -Wa,armasm,--pd,"STM32F10X_HD SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o stm32f103/startup_stm32f103xe.o)
-F (../Core/Src/main.c)(0x6AE953AD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/main.o -MMD)
+F (../Core/Src/main.c)(0x6AE954DD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/main.o -MMD)
 I (..\Core\Inc\main.h)(0x6AE8727C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x6AE6FE0C)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x6AE6FE0C)
@@ -24,16 +24,15 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame_fd.h)(0x6AE6FE0C)
+I (..\OTA_CAN\can_frame.h)(0x6AE95544)
 I (..\Core\Inc\can.h)(0x6AE87201)
 I (..\Core\Inc\usart.h)(0x6AE6FE0C)
 I (..\Core\Inc\gpio.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_ring_buffer.h)(0x6AE6FE0C)
+I (..\OTA_CAN\can_ring_buffer.h)(0x6AE95561)
 I (..\OTA_CAN\isotp.h)(0x6AE7B7F6)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_server.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_config.h)(0x6AE6FE0D)
+I (..\OTA_CAN\uds_server.h)(0x6AE954B6)
+I (..\OTA_CAN\uds_config.h)(0x6AE9547A)
 I (..\OTA_CAN\uds_session.h)(0x6AE6FE0D)
 I (..\OTA_CAN\dtc_table_85.h)(0x6AE6FE0C)
 I (..\OTA_CAN\dtc_store.h)(0x6AE6FE0C)
@@ -64,8 +63,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame_fd.h)(0x6AE6FE0C)
+I (..\OTA_CAN\can_frame.h)(0x6AE95544)
 F (../Core/Src/can.c)(0x6AE871FC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/can.o -MMD)
 I (..\Core\Inc\can.h)(0x6AE87201)
 I (..\Core\Inc\main.h)(0x6AE8727C)
@@ -90,8 +88,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame_fd.h)(0x6AE6FE0C)
+I (..\OTA_CAN\can_frame.h)(0x6AE95544)
 F (../Core/Src/usart.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/usart.o -MMD)
 I (..\Core\Inc\usart.h)(0x6AE6FE0C)
 I (..\Core\Inc\main.h)(0x6AE8727C)
@@ -116,8 +113,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame_fd.h)(0x6AE6FE0C)
+I (..\OTA_CAN\can_frame.h)(0x6AE95544)
 F (../Core/Src/stm32f1xx_it.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/stm32f1xx_it.o -MMD)
 I (..\Core\Inc\main.h)(0x6AE8727C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x6AE6FE0C)
@@ -141,8 +137,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame_fd.h)(0x6AE6FE0C)
+I (..\OTA_CAN\can_frame.h)(0x6AE95544)
 I (..\Core\Inc\stm32f1xx_it.h)(0x6AE6FE0C)
 F (../Core/Src/stm32f1xx_hal_msp.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/stm32f1xx_hal_msp.o -MMD)
 I (..\Core\Inc\main.h)(0x6AE8727C)
@@ -167,8 +162,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame_fd.h)(0x6AE6FE0C)
+I (..\OTA_CAN\can_frame.h)(0x6AE95544)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/stm32f1xx_hal_gpio_ex.o -MMD)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x6AE6FE0C)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x6AE6FE0C)
@@ -478,8 +472,8 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6AE6FE0C)
 F (..\OTA_CAN\can_ring_buffer.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/can_ring_buffer.o -MMD)
-I (..\OTA_CAN\can_ring_buffer.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame_fd.h)(0x6AE6FE0C)
+I (..\OTA_CAN\can_ring_buffer.h)(0x6AE95561)
+I (..\OTA_CAN\can_frame.h)(0x6AE95544)
 F (..\OTA_CAN\crypto_aes_cmac.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/crypto_aes_cmac.o -MMD)
 I (..\OTA_CAN\crypto_aes_cmac.h)(0x6AE6FE0C)
 F (..\OTA_CAN\dtc_nvm_adapter.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/dtc_nvm_adapter.o -MMD)
@@ -497,8 +491,8 @@ F (..\OTA_CAN\svc_authentication.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-no
 I (..\OTA_CAN\svc_authentication.h)(0x6AE6FE0C)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
 I (..\OTA_CAN\crypto_aes_cmac.h)(0x6AE6FE0C)
-I (..\OTA_CAN\uds_server.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_config.h)(0x6AE6FE0D)
+I (..\OTA_CAN\uds_server.h)(0x6AE954B6)
+I (..\OTA_CAN\uds_config.h)(0x6AE9547A)
 F (..\OTA_CAN\svc_clear_dtc.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/svc_clear_dtc.o -MMD)
 I (..\OTA_CAN\svc_clear_dtc.h)(0x6AE6FE0C)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
@@ -551,8 +545,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame_fd.h)(0x6AE6FE0C)
+I (..\OTA_CAN\can_frame.h)(0x6AE95544)
 F (..\OTA_CAN\svc_io_control.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/svc_io_control.o -MMD)
 I (..\OTA_CAN\svc_io_control.h)(0x6AE6FE0C)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
@@ -572,8 +565,8 @@ I (..\OTA_CAN\svc_read_did.h)(0x6AE6FE0C)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
 I (..\OTA_CAN\uds_did_table.h)(0x6AE6FE0D)
 I (..\OTA_CAN\svc_security_access.h)(0x6AE70EE9)
-I (..\OTA_CAN\uds_server.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_config.h)(0x6AE6FE0D)
+I (..\OTA_CAN\uds_server.h)(0x6AE954B6)
+I (..\OTA_CAN\uds_config.h)(0x6AE9547A)
 F (..\OTA_CAN\svc_read_dtc.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/svc_read_dtc.o -MMD)
 I (..\OTA_CAN\svc_read_dtc.h)(0x6AE6FE0C)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
@@ -585,8 +578,8 @@ I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
 F (..\OTA_CAN\svc_security_access.c)(0x6AE730B6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/svc_security_access.o -MMD)
 I (..\OTA_CAN\svc_security_access.h)(0x6AE70EE9)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_server.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_config.h)(0x6AE6FE0D)
+I (..\OTA_CAN\uds_server.h)(0x6AE954B6)
+I (..\OTA_CAN\uds_config.h)(0x6AE9547A)
 I (..\OTA_CAN\crypto_aes_cmac.h)(0x6AE6FE0C)
 I (..\OTA_CAN\uds_platform_time.h)(0x6AE86E5B)
 F (..\OTA_CAN\svc_tester_present.c)(0x6AE6FE0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/svc_tester_present.o -MMD)
@@ -606,8 +599,8 @@ I (..\OTA_CAN\svc_write_did.h)(0x6AE6FE0D)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
 I (..\OTA_CAN\uds_did_table.h)(0x6AE6FE0D)
 I (..\OTA_CAN\svc_security_access.h)(0x6AE70EE9)
-I (..\OTA_CAN\uds_server.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_config.h)(0x6AE6FE0D)
+I (..\OTA_CAN\uds_server.h)(0x6AE954B6)
+I (..\OTA_CAN\uds_config.h)(0x6AE9547A)
 F (..\OTA_CAN\uds_did_table.c)(0x6AE6FE0D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/uds_did_table.o -MMD)
 I (..\OTA_CAN\uds_did_table.h)(0x6AE6FE0D)
 I (..\OTA_CAN\uds_session.h)(0x6AE6FE0D)
@@ -636,12 +629,11 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6AE6FE0C)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame.h)(0x6AE6FE0C)
-I (..\OTA_CAN\can_frame_fd.h)(0x6AE6FE0C)
-F (..\OTA_CAN\uds_server.c)(0x6AE73653)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/uds_server.o -MMD)
-I (..\OTA_CAN\uds_server.h)(0x6AE6FE0D)
+I (..\OTA_CAN\can_frame.h)(0x6AE95544)
+F (..\OTA_CAN\uds_server.c)(0x6AE954C2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/uds_server.o -MMD)
+I (..\OTA_CAN\uds_server.h)(0x6AE954B6)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_config.h)(0x6AE6FE0D)
+I (..\OTA_CAN\uds_config.h)(0x6AE9547A)
 I (..\OTA_CAN\uds_session.h)(0x6AE6FE0D)
 I (..\OTA_CAN\svc_diag_session.h)(0x6AE6FE0C)
 I (..\OTA_CAN\svc_ecu_reset.h)(0x6AE6FEC1)
@@ -666,8 +658,8 @@ I (..\OTA_CAN\svc_write_address.h)(0x6AE6FE0D)
 F (..\OTA_CAN\uds_session.c)(0x6AE72FD7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/uds_session.o -MMD)
 I (..\OTA_CAN\uds_session.h)(0x6AE6FE0D)
 I (..\OTA_CAN\uds_types.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_server.h)(0x6AE6FE0D)
-I (..\OTA_CAN\uds_config.h)(0x6AE6FE0D)
+I (..\OTA_CAN\uds_server.h)(0x6AE954B6)
+I (..\OTA_CAN\uds_config.h)(0x6AE9547A)
 I (..\OTA_CAN\uds_platform_time.h)(0x6AE86E5B)
 I (..\OTA_CAN\svc_security_access.h)(0x6AE70EE9)
 F (..\OTA_CAN\uds_wear_leveling.c)(0x6AE6FE0D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../OTA_CAN-I./RTE/_STM32F103-ID:/Keil_v5/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o stm32f103/uds_wear_leveling.o -MMD)

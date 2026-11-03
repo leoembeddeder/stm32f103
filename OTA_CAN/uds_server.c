@@ -31,14 +31,6 @@
 #include "svc_read_address.h"
 #include "svc_write_address.h"
 
-/* ── App config storage ───────────────────────────────────────────── */
-
-static const uds_app_config_t *s_app_config = NULL;
-
-const uds_app_config_t *uds_get_app_config(void) {
-    return s_app_config;
-}
-
 /* ── Service Dispatch Table ───────────────────────────────────────── */
 
 static uds_service_entry_t s_service_table[UDS_MAX_SERVICES];
@@ -91,8 +83,7 @@ static const uds_service_entry_t *find_service(uint8_t sid) {
 
 /* ── Public API ───────────────────────────────────────────────────── */
 
-void uds_server_init(const uds_app_config_t *config) {
-    s_app_config = config;
+void uds_server_init(void) {
     s_service_count = 0U;
     s_active_security_mask = UDS_SEC_LEVEL_LOCKED;
     s_active_session_mask  = SESSION_MASK_DEFAULT;

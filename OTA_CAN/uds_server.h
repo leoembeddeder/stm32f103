@@ -41,19 +41,10 @@ typedef struct {
     uint32_t              securityMask;      /**< Required security levels */
 } uds_service_entry_t;
 
-struct uds_app_config_s {
-    void *user_data;
-};
-
 /**
  * @brief Initialize UDS Server with application configuration and register all 21 core services
  */
-void uds_server_init(const uds_app_config_t *config);
-
-/**
- * @brief Retrieve current registered application configuration
- */
-const uds_app_config_t *uds_get_app_config(void);
+void uds_server_init(void);
 
 /**
  * @brief Dynamically register or override a service entry

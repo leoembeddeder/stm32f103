@@ -13,6 +13,4 @@
 #define UDS_MAX_SERVICES 32U
 #endif
 
-typedef struct uds_app_config_s uds_app_config_t;
-
 #endif /* UDS_CONFIG_H */

@@ -10,7 +10,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <stddef.h>
-#include "can_frame_fd.h"
+#include "can_frame.h"
 
 #ifndef CAN_RING_BUFFER_CAPACITY
 #define CAN_RING_BUFFER_CAPACITY 32U  /* Must be a power of 2 */

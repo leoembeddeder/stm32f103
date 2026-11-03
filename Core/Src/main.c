@@ -75,8 +75,6 @@ can_ring_buffer_t queue;
 
 static uint8_t rx_buf[ISOTP_MAX_LEN];
 static isotp_link_t diag;
-static const uds_app_config_t s_app_cfg = {NULL};
-
 /* ── function definition ────────────────── */
 
 static int can_tx(void *user, uint32_t id, const uint8_t *data, uint8_t len)
@@ -134,7 +132,7 @@ int main(void)
 
   can_ring_buffer_init(&queue);
   diag_init();
-  uds_server_init(&s_app_cfg);
+  uds_server_init();
   dtc_table_85_init();
   dtc_nvm_init();
 

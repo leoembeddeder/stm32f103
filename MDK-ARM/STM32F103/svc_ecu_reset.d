@@ -22,4 +22,4 @@ stm32f103/svc_ecu_reset.o: ..\OTA_CAN\svc_ecu_reset.c \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h \
-  ..\OTA_CAN\can_frame.h ..\OTA_CAN\can_frame_fd.h
+  ..\OTA_CAN\can_frame.h
